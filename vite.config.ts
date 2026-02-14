@@ -6,7 +6,7 @@ export default defineConfig({
   // Base path for GitHub Pages - update this to match your repo name
   // For user/org pages (username.github.io), use "/"
   // For project pages (username.github.io/repo-name), use "/repo-name/"
-  base: "/spirit-wolf-market/",
+  base: "/spirit-wolf/",
   
   plugins: [react()],
   resolve: {
