@@ -4,26 +4,26 @@
       "id": 1,
       "name": "Spirit Wolf T-Shirt",
       "description": "Premium cotton t-shirt featuring the iconic Spirit Wolf logo. Soft, comfortable, and perfect for everyday wear. Available in sizes S-XXL.",
-      "price": 2999,
-      "imageUrl": "/images/spirit-wolf-hero.png",
+      "price": 299,
+      "imageUrl": "/images/logox1000.png",
       "isSold": false,
-      "category": "apparel"
+      "category": "art"
     },
     {
       "id": 2,
       "name": "Spirit Wolf Hoodie",
       "description": "Cozy fleece hoodie with embroidered Spirit Wolf design. Features a kangaroo pocket and adjustable drawstring hood. Perfect for cool evenings.",
-      "price": 5499,
-      "imageUrl": "/images/spirit-wolf-hero.png",
+      "price": 549,
+      "imageUrl": "/images/night-sky.png",
       "isSold": false,
-      "category": "apparel"
+      "category": "art"
     },
     {
       "id": 3,
       "name": "Spirit Wolf Art Print",
       "description": "High-quality art print of the original Spirit Wolf artwork. Printed on premium matte paper, ready to frame. Size: 18x24 inches.",
-      "price": 3999,
-      "imageUrl": "/images/spirit-wolf-hero.png",
+      "price": 399,
+      "imageUrl": "/images/mixed1.png",
       "isSold": false,
       "category": "art"
     },
@@ -31,7 +31,7 @@
       "id": 4,
       "name": "Spirit Wolf Mug",
       "description": "Ceramic coffee mug featuring the Spirit Wolf design. Dishwasher and microwave safe. Holds 15oz of your favorite beverage.",
-      "price": 1499,
+      "price": 149,
       "imageUrl": "/images/spirit-wolf-hero.png",
       "isSold": false,
       "category": "accessories"
@@ -40,8 +40,8 @@
       "id": 5,
       "name": "Spirit Wolf Sticker Pack",
       "description": "Set of 5 vinyl stickers featuring various Spirit Wolf designs. Waterproof and UV resistant. Perfect for laptops, water bottles, and more.",
-      "price": 999,
-      "imageUrl": "/images/spirit-wolf-hero.png",
+      "price": 99,
+      "imageUrl": "/images/mixed1.png",
       "isSold": false,
       "category": "accessories"
     },
@@ -49,7 +49,7 @@
       "id": 6,
       "name": "Spirit Wolf Cap",
       "description": "Adjustable snapback cap with embroidered Spirit Wolf logo. One size fits most. Available in navy and black.",
-      "price": 2499,
+      "price": 249,
       "imageUrl": "/images/spirit-wolf-hero.png",
       "isSold": false,
       "category": "apparel"

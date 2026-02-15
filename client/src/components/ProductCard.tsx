@@ -25,7 +25,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
           <div className="aspect-[4/5] overflow-hidden relative">
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
             <img
-              src={product.imageUrl}
+              src={`${import.meta.env.BASE_URL}${product.imageUrl.replace(/^\//, '')}`}
               alt={product.name}
               className={`w-full h-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-110 ${isSold ? 'grayscale' : ''}`}
             />

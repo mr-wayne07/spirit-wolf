@@ -31,7 +31,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/40 z-10" />
           {/* Main Hero Image - Spirit Wolf */}
           <img 
-            src="/images/spirit-wolf-hero.png" 
+            src={`${import.meta.env.BASE_URL}images/spirit-wolf-hero.png`} 
             alt="Spirit Wolf" 
             className="w-full h-full object-cover object-center"
           />

@@ -61,7 +61,7 @@ export default function ProductDetail() {
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-700" />
             <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-primary/10">
               <img
-                src={product.imageUrl}
+                src={`${import.meta.env.BASE_URL}${product.imageUrl.replace(/^\//, '')}`}
                 alt={product.name}
                 className={`w-full h-full object-cover ${product.isSold ? 'grayscale opacity-75' : ''}`}
               />
