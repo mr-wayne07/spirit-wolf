@@ -6,9 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ArrowLeft, Check, ShieldCheck, Zap, Sparkles, ExternalLink } from "lucide-react";
 
+// Get the base path from Vite's BASE_URL environment variable
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 export default function ProductDetail() {
-  const [, params] = useRoute("/product/:id");
-  const id = params ? parseInt(params.id) : 0;
+  const [, params] = useRoute(basePath + "/product/:id");
+  const id = params ? parseInt((params as Record<string, string>).id) : 0;
   
   const { data: product, isLoading } = useProduct(id);
 
@@ -44,7 +47,7 @@ export default function ProductDetail() {
       <Navbar />
       
       <div className="container mx-auto px-4 py-24 lg:py-32">
-        <Link href="/">
+        <Link href={basePath + "/"}>
           <Button variant="ghost" className="mb-8 hover:bg-white/5 hover:text-primary transition-colors">
             <ArrowLeft className="mr-2 h-4 w-4" /> Back to Collection
           </Button>

@@ -6,6 +6,9 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Sparkles, ArrowRight } from "lucide-react";
 
+// Get the base path from Vite's BASE_URL environment variable
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 interface ProductCardProps {
   product: Product;
   index: number;
@@ -20,7 +23,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
     >
-      <Link href={`/product/${product.id}`}>
+      <Link href={`${basePath}/product/${product.id}`}>
         <Card className="group h-full overflow-hidden bg-card/50 border-white/5 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.15)] cursor-pointer backdrop-blur-sm relative">
           <div className="aspect-[4/5] overflow-hidden relative">
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500" />

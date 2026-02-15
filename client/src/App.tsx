@@ -8,12 +8,15 @@ import ProductDetail from "@/pages/ProductDetail";
 import About from "@/pages/About";
 import NotFound from "@/pages/not-found";
 
+// Get the base path from Vite's BASE_URL environment variable
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/product/:id" component={ProductDetail} />
-      <Route path="/about" component={About} />
+      <Route path={basePath + "/"} component={Home} />
+      <Route path={basePath + "/product/:id"} component={ProductDetail} />
+      <Route path={basePath + "/about"} component={About} />
       <Route component={NotFound} />
     </Switch>
   );
