@@ -21,6 +21,14 @@ export function Navbar() {
           <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors hidden md:block">
             Our Story
           </Link>
+          <a 
+            href="https://spiritwolf.dashery.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors hidden md:block"
+          >
+            Merch
+          </a>
         </div>
       </div>
     </nav>
